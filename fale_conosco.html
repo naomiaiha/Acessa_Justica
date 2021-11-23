@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Acessa Justiça</title>
+    <link href="css_base.css" rel="stylesheet">
+    <script type="text/javascript" src="fale_conosco.js"></script>
+    <link rel="icon" type="image/x-icon" href="fotos/icon.png">
+</head>
+<body>
+    <header class="topo">
+        <img src="fotos\balanca.png" class="balanca">
+        <h1 id="acessa"><a href="pag_principal.html" style="text-decoration: none; color: aliceblue;">acessa justiça</a></h1>
+        <a href="https://www.ipea.gov.br/ods/ods16.html" target="_blank"><img src="fotos\ods16.png" style="float: right;" class="ave"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="pag_principal.html">Página Principal</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="localize.html">Localize Aqui</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+            <li class="dropdown">
+              <a href="#sobre" class="menudrop">Sobre Nós</a>
+              <div class="conteudo_drop">
+                <a href="quem_somos.html">Quem Somos</a>
+                <a href="fale_conosco.html">Fale Conosco</a>
+              </div>
+            </li>
+          </ul>
+    </nav>  
+      <div id="interface">
+        <h2 style="text-indent: 475px;">fale Conosco</h2>
+
+        <!-- CONTEUDO DA PÁGINA -->
+        	<form name="formulario" action="https://formsubmit.co/acessajustica@gmail.com" method="POST">
+          
+			<fieldset>
+		Nome Completo:
+		<br>
+		<input type="text" name="full_name" placeholder=" Digite o seu nome" size="80" >
+		<br><br>
+		E-mail:
+		<br>
+		<input type="e-mail" name="email" placeholder=" Digite o seu e-mail" size="80" >
+		<br><br>
+		Telefone:
+		<br>
+		<input type="tel" name="telephone" placeholder=" Digite um telefone para contato" size="80" >
+		<br><br><br>
+		Mensagem:
+		<br>
+		<textarea name="mensagem" placeholder=" Deixe aqui a sua mensagem" size="80" rows="10" cols="79" maxlength="500" ></textarea>
+		<br><br>
+    <button type="submit" onclick="return validar ()">Enviar</button>
+    <input  type="reset" value="Limpar">	
+    <!--Retornar a página principal depois de inserir a mensagem-->	
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pag_principal.html">
+		<!--Esconder o captcha-->
+    <input type="hidden" name="_captcha" value="false">
+			</fieldset>
+	</form>
+    </div>  
+</body>
+</html>
