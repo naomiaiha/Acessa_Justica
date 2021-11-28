@@ -248,6 +248,13 @@ tr, td{
   border-color: #006aa3;
   border-width : 15px;
   border-radius: 50%;
+  
+}
+
+.ods_flutuante:hover{
+  border: 5px transparent rgb(94, 149, 252);
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
 
  /* imagens e parágrafo pag principal */
